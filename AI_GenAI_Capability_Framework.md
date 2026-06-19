@@ -3217,8 +3217,6 @@ Individual targets roll up into a healthier capability distribution. The figures
 
 ---
 
-I have enough verified detail. Writing the section now.
-
 ## 18. Training Plan by Level
 
 This plan maps every ladder level (L0/L1 through L10) to a concrete learning path. Each level builds on the one below it, so no learner should skip a tier. Training references are real, publicly available programs; where a program name is exact it is hyperlinked. Time estimates assume a working professional learning part-time alongside their day job.

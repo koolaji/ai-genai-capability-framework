@@ -9,8 +9,27 @@ DataOps, Security/Governance, QA, Release/Change, and Technical Management.
 
 | File | Contents |
 |---|---|
-| [`AI_GenAI_Capability_Framework.md`](./AI_GenAI_Capability_Framework.md) | The full 23-section framework (the deliverable) |
+| [`AI_GenAI_Capability_Framework.md`](./AI_GenAI_Capability_Framework.md) | The full 23-section framework — **English** (the deliverable) |
+| [`AI_GenAI_Capability_Framework_EN.pdf`](./AI_GenAI_Capability_Framework_EN.pdf) | English PDF for leadership (cover + table of contents, ~155 pages) |
+| [`AI_GenAI_Capability_Framework_FA.md`](./AI_GenAI_Capability_Framework_FA.md) | The full framework — **Persian / فارسی** |
+| [`AI_GenAI_Capability_Framework_FA.pdf`](./AI_GenAI_Capability_Framework_FA.pdf) | Persian PDF, fully **right-to-left (RTL)** (~146 pages) |
+| [`tools/render_pdf.py`](./tools/render_pdf.py) | Script that renders either markdown file to a styled PDF (WeasyPrint; `--rtl` for Persian) |
 | [`promt.md`](./promt.md) | The original brief used to generate the framework |
+
+### Regenerating the PDFs
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install weasyprint markdown
+# English
+.venv/bin/python tools/render_pdf.py AI_GenAI_Capability_Framework.md AI_GenAI_Capability_Framework_EN.pdf
+# Persian (RTL)
+.venv/bin/python tools/render_pdf.py AI_GenAI_Capability_Framework_FA.md AI_GenAI_Capability_Framework_FA.pdf --rtl \
+  --title "چارچوب ارزیابی توانمندی AI / GenAI"
+```
+
+The Persian edition keeps all technical terms and standard names (DevOps, NIST AI RMF,
+ISO/IEC 42001, OWASP, SFIA, DORA, etc.) in Latin script, with structure, tables, and
+code preserved.
 
 ## The recommendation in one line
 

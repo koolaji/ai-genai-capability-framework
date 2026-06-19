@@ -1,2 +1,6 @@
 .DS_Store
 Thumbs.db
+.venv/
+tools/sections_en/
+tools/sections_fa/
+*.png
